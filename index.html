@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -35,15 +36,45 @@
                 </li>
                 <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Design & UX</a>
-                </li>
-                
+                </li>        
             </ul>
-            <img src="imagens/Logo.svg" alt="Logo da Alura" class="container__imagem">
+            <img src="imagens/Logo.svg" alt="Logo da Alura" class="container__imagem container__imagem-logo">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
         </div>
+        
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botao">
+            <label for="opções-menu">
+            <li class="opções__item">CATEGORIAS</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-End</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>        
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">FAVORITOS</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">MINHA ESTANTE</a></li>
+        </ul>
+        
+        
         <div class="container">
-            <a href="#"><img src="imagens/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
-            <a href="#"><img src="imagens/Compras.svg" alt="Carrinho de Compras" class="container__imagem"></a>
-            <a href="#"><img src="imagens/Usuario.svg" alt="Meu Perfil" class="container__imagem"></a>
+            <a href="#"><img src="imagens/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente"></a>
+            <a href="#"><img src="imagens/Compras.svg" alt="Carrinho de Compras" class="container__imagem container__imagem-icones"></a>
+            <a href="#"><img src="imagens/Usuario.svg" alt="Meu Perfil" class="container__imagem container__imagem-icones"></a>
         </div>
     </header>
     <section class="banner">
@@ -64,12 +95,18 @@
             <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
         <!-- Slides -->
+
         <div class="swiper-slide"><img src="imagens/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
         <div class="swiper-slide"><img src="imagens/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
         <div class="swiper-slide"><img src="imagens/Guia Front-end.svg" alt="Livro sobre guia front end da alura books"></div>
         <div class="swiper-slide"><img src="imagens/Javascript.svg" alt="Livro sobre JavaScipt assertivo da alura books"></div>
         <div class="swiper-slide"><img src="imagens/Portugol.svg" alt="Livro sobre Portugol da alura books"></div>
         <div class="swiper-slide"><img src="imagens/Acessibilidade.svg" alt="Livro sobre Acessibilidade da alura books"></div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
         </div>
 
         <div class="card">
@@ -119,6 +156,13 @@
         <div class="swiper-slide"><img src="imagens/Portugol.svg" alt="Livro sobre Portugol da alura books"></div>
         <div class="swiper-slide"><img src="imagens/Acessibilidade.svg" alt="Livro sobre Acessibilidade da alura books"></div>
         </div>
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+    </div>
+
+        
 
         <div class="card">
             <!-- 1ª linha -->
@@ -200,6 +244,10 @@
         el: '.swiper-pagination',
         type: 'bullets',
     },
+    navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
   });
     </script>
 </body>
