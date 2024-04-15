@@ -17,7 +17,7 @@
 
 .container{
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 
 .container__imagem{
@@ -69,6 +69,10 @@
     display: none;
 }
 
+.container__texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     .container__titulo{
         display: block;
@@ -114,11 +118,34 @@
     .container__imagem-transparente{
         display: none;
     }
-    .container__imagem-icones{
-        padding: 0 2em;
-    }
     
     .container__imagem-logo{
         padding: 0 0.5em 0 5em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho{
+        padding: 0 2em;
+    }
+    
+    .container__link{
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    
+    .container__titulo{
+        width: 10vw;
+    }
+    
+    .container__texto{
+        display: flex;
+        align-items: center;
+    }
+
+    .opções{
+        margin-right: auto;
     }
 }

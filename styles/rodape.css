@@ -42,6 +42,7 @@ hr{
         text-transform: uppercase;
         color: var(--cinza-titulo);
         font-size: 14px;
+        margin-bottom: 1em;
        
     }
 
